@@ -1,0 +1,82 @@
+.form_col {
+    width: 440px;
+    min-height: 450px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.LogoDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.formLogo {
+    width: 237px;
+    height: 59px;
+}
+.orBox {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.through {
+    padding: 20px 0;
+    position: relative;
+    // display: block;
+    overflow: hidden;
+    clear: both;
+    color: #8a96a3;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+.line {
+    color: #b7c7d8;
+    // background-color: #a4b3c3;
+    // height: 1px;
+    width: 40%;
+}
+.signUpForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.signUpLabel {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.signUpInput {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #8a96a3;;
+    margin: 24px 6px;
+}
+.LoginBtn {
+    background-color: #0091ea;
+    color: white;
+    border-radius: 25px;
+    margin: 8px;
+    width: 88%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+.saL {
+    margin: 10px auto;
+}

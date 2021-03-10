@@ -1,0 +1,12 @@
+.LoadingScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.ComingSoon {
+    color: rgb(0, 146, 146);
+    font-family: $NotoSans;
+    font-size: 18px;
+}

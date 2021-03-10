@@ -1,0 +1,18 @@
+@import "reset";
+@import "fonts";
+@import "./components/BtnFancy.scss";
+@import "./animations/throb.scss";
+@import "./pages/LoadingScreen.scss";
+@import "./pages/Landing.scss";
+@import "./components/SignIn.scss";
+@import "./components/Footer.scss";
+
+.App {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+}
+.Container {
+    width: 75%;
+    padding: 0 15vw;
+}

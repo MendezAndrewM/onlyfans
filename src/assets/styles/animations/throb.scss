@@ -1,0 +1,12 @@
+.throb {
+    animation-name: throb;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes throb {
+    0% { transform: scale(1); margin-bottom: 6px; }
+    50% { transform: scale(1.2); margin-bottom: 12px; }
+    100% { transform: scale(1); margin-bottom: 6px; }
+}

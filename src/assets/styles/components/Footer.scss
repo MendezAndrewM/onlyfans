@@ -1,0 +1,19 @@
+.Footer {
+    width: 100%;
+    min-height: 16px;
+    border-top: grey solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    margin-top: 24px;
+}
+.footWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footItem {
+    margin: 12px;
+}
