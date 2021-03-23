@@ -8,7 +8,7 @@ const UnderConstruction = ({ theme }) =>  (
             src={theme === 'dark' ? logoDark : logoLight} 
             alt="logo"
             style={{
-                marginTop: '38vh',
+                marginTop: '30vh',
                 width: '70vw',
                 height: 'auto'
         }}
