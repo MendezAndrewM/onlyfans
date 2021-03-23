@@ -3,10 +3,7 @@ import useViewport from '../../hooks/Viewport';
 import SignIn from '../../components/SignIn';
 import '../../assets/styles/main.scss'
 import Footer from '../../components/Footer';
-
-function SwiperMcSwipeWrapper() {
-  return <img src="https://via.placeholder.com/440x720.png?text=SwiperMcSwipeFace" />
-}
+import SwiperMcSwipeWrapper from '../../components/SwiperMcSwipeWrapper'
 
 export default function Landing() {
 
@@ -22,8 +19,8 @@ export default function Landing() {
             </div>
           )
         }
-        <SignIn />
-      </div>
+          <SignIn />
+        </div>
       <Footer />
     </div>
   )
