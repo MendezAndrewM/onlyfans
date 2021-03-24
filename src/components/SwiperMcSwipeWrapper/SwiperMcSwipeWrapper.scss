@@ -50,35 +50,35 @@
   height: 100%;
   
   transform: translateX( 294px );
-  background-image: url(../../img/fan1.png);
+  background-image: url(../../assets/img/fan1.png);
   background-repeat: no-repeat;
   background-size: cover;
   
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  animation: opaqTransition 20s cubic-bezier(0, 0, 0, 0.97) infinite;
 }
 
 .phoneScreen.frame-two {
   z-index: 6;
-  background-image: url(../../img/fan5.png);
+  background-image: url(../../assets/img/fan5.png);
   background-repeat: no-repeat;
   background-size: cover;
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 
 .phoneScreen.frame-three {
   z-index: 5;
-  background-image: url(../../img/fan3.png);
+  background-image: url(../../assets/img/fan3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  animation-delay: 14s;
+  animation-delay: 10s;
 }
 
 .phoneScreen.frame-four {
   z-index: 4;
-  background-image: url(../../img/fan4.png);
+  background-image: url(../../assets/img/fan4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  animation-delay: 21s;
+  animation-delay: 15s;
 }
 
 
