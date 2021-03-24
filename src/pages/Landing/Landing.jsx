@@ -1,28 +1,33 @@
 import React from 'react';
-import useViewport from '../../hooks/Viewport';
+import { Container, Grid } from '@material-ui/core';
+import './Landing.scss';
 import SignIn from '../../components/SignIn';
-import '../../assets/styles/main.scss'
 import Footer from '../../components/Footer';
 import SwiperMcSwipeWrapper from '../../components/SwiperMcSwipeWrapper'
+import useViewport from '../../hooks/Viewport';
 
 export default function Landing() {
 
-  const { width, height } = useViewport();
+  const { width } = useViewport();
 
   return (
-    <div className="Container">
-      <div className="LandingContainer">
+    <Container maxWidth="lg">
+      <Grid
+        container
+        className="LandingContainer"
+        justify="space-around"
+      >
         {
-          width >= 902 && (
-            <div className="phone_col">
+          width >= 929 && (
+            <div>
               <SwiperMcSwipeWrapper />
             </div>
           )
         }
           <SignIn />
-        </div>
+        </Grid>
       <Footer />
-    </div>
+    </Container>
   )
   
 }

@@ -1,34 +1,20 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
+import "./Footer.scss";
 
-const Divider = () => <span className="footItem"> | </span>;
-const Footer = ({ theme }) => {
-    return (
-    <div className="Footer">
-        <div className="footWrapper">
-            <span className="footItem">©2020 Mendez-Solutions</span>
-            <Divider />
-            <span className="footItem">Blog</span>
-            <Divider />
-            <span className="footItem">Twitter</span>
-        </div>
-        <div className="footWrapper">
-            <span className="footItem">FAQs</span>
-            <Divider />
-            <span className="footItem">Terms</span>
-            <Divider />
-            <span className="footItem">Privacy</span>
-            <Divider />
-            <span className="footItem">Contact</span>
-            <Divider />
-            <span className="footItem">How it works</span>
-            <Divider />
-            <span className="footItem">CC0</span>
-        </div>
-        <div className="footWrapper">
-            <span className="footItem">🌐 English ⌄</span>
-        </div>
-    </div>
-    )
-}
+const Footer = ({ theme }) => (
+    <Grid
+        container
+        className="Footer"
+        justify="space-around"
+        alignItems="center"
+    >
+        <span item xs={3}>©2021 Mendez-Solutions</span>
+        <span item xs={3}>FAQs</span>
+        <span item xs={3}>Contact</span>
+        <span item xs={3}>How it works</span>
+    </Grid>
+);
+
 
 export default Footer;

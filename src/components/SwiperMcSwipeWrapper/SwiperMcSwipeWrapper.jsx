@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/components/SwiperMcSwipeWrapper.scss'
+import './SwiperMcSwipeWrapper.scss'
 import phones from '../../assets/img/phones.png';
 
 function SwiperMcSwipeWrapper() {
