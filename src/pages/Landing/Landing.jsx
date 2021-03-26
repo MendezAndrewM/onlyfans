@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import SwiperMcSwipeWrapper from '../../components/SwiperMcSwipeWrapper'
 import useViewport from '../../hooks/Viewport';
 
-export default function Landing() {
+const Landing = () => {
 
   const { width } = useViewport();
 
@@ -14,20 +14,28 @@ export default function Landing() {
     <Container maxWidth="lg">
       <Grid
         container
+        wrap="nowrap"
         className="LandingContainer"
-        justify="space-around"
+        justify="space-evenly"
       >
         {
-          width >= 929 && (
-            <div>
-              <SwiperMcSwipeWrapper />
-            </div>
+          width >= 960 && (
+            <Grid
+              item
+              container
+              alignItems="center"
+              justify="center"
+              lg={6}
+              >
+                <SwiperMcSwipeWrapper />
+            </Grid>
           )
         }
           <SignIn />
         </Grid>
       <Footer />
     </Container>
-  )
-  
-}
+  );
+};
+
+export default Landing;
