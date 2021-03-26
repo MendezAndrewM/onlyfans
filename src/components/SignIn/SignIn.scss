@@ -1,0 +1,72 @@
+
+.SignIn {
+    padding-top: 80px;
+}
+@media only screen and (max-width: 960px) {
+    .SignIn {
+        padding-top: 20px;;
+    }
+}
+
+#title-logo {
+    margin-bottom: 20px;
+    height: 59px;
+    width: 237px;
+}
+
+#formContainer {
+    justify-content: space-evenly;
+    flex-grow: .25;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+#TwitterBtn::before {
+    content: url(../../assets/img/logo/TwitterLogo.svg);
+    position: absolute;
+    top: 13px;
+    left: 10px
+}
+
+#GoogleBtn::before {
+    content: url(../../assets/img/logo/icons8-google.svg);
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    margin: 3px 0;
+    padding: 4px 4px 0px 6px;
+    background-color:  white;
+    height: 87%;
+    border-radius: 25px 0 0 25px;
+}
+
+.orBox {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.through {
+    position: relative;
+    overflow: hidden;
+    color: #8a96a3;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+.line {
+    color: #b7c7d8;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+}
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: rgb(65,141,253);
+    cursor: pointer;
+}
