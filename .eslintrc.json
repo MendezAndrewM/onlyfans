@@ -1,0 +1,129 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": [
+            "warn",
+            { "allow": ["warn", "error"]}
+        ],
+        "no-extra-semi":"error",
+        "eqeqeq": "error",
+        "no-trailing-spaces": ["error", {
+            "ignoreComments": true
+        }],
+        "no-multiple-empty-lines": ["error", {
+            "max": 1,
+            "maxEOF": 0,
+            "maxBOF": 0
+        }],
+        "no-irregular-whitespace": ["error", {
+            "skipStrings": true,
+            "skipComments": true,
+            "skipRegExps": true,
+            "skipTemplates": true
+        }],
+        "react/boolean-prop-naming": ["error", {
+            "propTypeNames": ["bool", "mutuallyExclusiveTrueProps"],
+            "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
+            "message": "Must use standard boolean prefix (e.g. is|can|has|etc.)",
+            "validateNested": true
+          }],
+        "react/require-default-props": [
+            "error",
+            {
+               "forbidDefaultForRequired": true
+            }
+        ],
+        "react/default-props-match-prop-types": ["error", {
+            "allowRequiredDefaults": true 
+        }],
+        "react/destructuring-assignment": [
+            "warn",
+            "always",
+            { "ignoreClassFields": true }
+        ],
+        "react/function-component-definition": [
+            "error",
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "react/no-unused-prop-types": [
+            1,
+            {
+                "ignore": ["children", "temp", "test"]
+
+            }
+        ],
+        "react/self-closing-comp": ["error", {
+            "component": true,
+            "html": true
+          }],
+        "react/sort-prop-types": ["warn", {
+        "callbacksLast": false,
+        "ignoreCase": false,
+        "requiredFirst": false,
+        "sortShapeProp": true,
+        "noSortAlphabetically": false
+        }],
+        "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+        "react/jsx-closing-tag-location": "error",
+        "react/jsx-curly-newline": ["error", {
+            "multiline": "require",
+            "singleline": "consistent"
+        }],
+        "react/jsx-equals-spacing": [2, "never"],
+        "react/jsx-filename-extension": [1, { "extensions": [".jsx"] }],
+        "react/jsx-fragments": ["warn", "syntax"],
+        "react/jsx-key": ["warn", { "checkFragmentShorthand": true }],
+        "react/jsx-no-target-blank": ["error", {
+            "allowReferrer": false
+          }],
+          "react/jsx-props-no-spreading": ["error", {
+              "html": "ignore",
+              "custom": "enforce"
+          }],
+          "react/jsx-props-no-multi-spaces": "warn",
+          "react/jsx-space-before-closing": "warn"
+
+
+    },
+    "settings": {
+        "react": {
+            "pragma": "React"
+        }
+    }
+}
