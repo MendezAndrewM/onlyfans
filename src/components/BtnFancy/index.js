@@ -1,1 +1,1 @@
-export { default } from './BtnFancy'
+export { default } from './BtnFancy';

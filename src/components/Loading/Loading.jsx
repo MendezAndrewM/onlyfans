@@ -1,19 +1,30 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import logoLight from './../../assets/img/logo/logoLight.png';
 import logoDark from './../../assets/img/logo/logoDark.png';
 
 const UnderConstruction = ({ theme }) =>  (
-    <img 
-            className='throb' 
-            src={theme === 'dark' ? logoDark : logoLight} 
-            alt="logo"
-            style={{
-                marginTop: '30vh',
-                width: '70vw',
-                height: 'auto'
-        }}
-    />
+	<img
+		className="throb"
+		src={theme === 'dark' ? logoDark : logoLight}
+		alt="logo"
+		style={
+			{
+				marginTop: '30vh',
+				width: '70vw',
+				height: 'auto'
+			}
+		}
+	/>
 );
+
+UnderConstruction.propTypes = {
+	theme: PropTypes.string
+};
+
+UnderConstruction.defaultProps = {
+	theme: 'light'
+};
 
 export default UnderConstruction;
 
